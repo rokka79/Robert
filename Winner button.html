@@ -15,11 +15,10 @@
 
 <div class="container">
   <div class="p-5 mb-3.6 bg-success text">
-    <h5> 
-      <div class="text-center"
-        <p id="demo"></p>
-      </div>
-    </h5>
+  <h5> <div class="text-center"
+    <p id="btn"></p>
+  </div>
+  </h5>
   <div class="row">
     <div class="col-md-3.5">
       <div class="card">
@@ -27,7 +26,7 @@
           <div class="card-header">
             <div class="text-center p-3.2 mb-2.5 bg-dark text-white">BUTTON 1
               <div class="card text-center" style="width: 16.6rem;">
-                <button onclick = "myFunction()""#" class="btn btn-danger">PUSH BUTTON</button>
+                <button onclick = "clickText('IS NOT THE WINNER BUTTON')""#" class="btn btn-danger">PUSH BUTTON</button>
               </div>
             </div>
           </div>
@@ -40,7 +39,7 @@
           <div class="card-header">
             <div class="text-center p-3.2 mb-2.5 bg-dark text-white">BUTTON 2
               <div class="card text-center" style="width: 16.6rem;">
-                <button onclick = "myFunction()""#" class="btn btn-danger">PUSH BUTTON</button>
+                <button onclick = "clickText('WINNER BUTTON')""#" class="btn btn-danger">PUSH BUTTON</button>
               </div>
             </div>
           </div>
@@ -53,7 +52,7 @@
           <div class="card-header">
             <div class="text-center p-3.2 mb-2.5 bg-dark text-white">BUTTON 3
               <div class="card text-center" style="width: 16.6rem;">
-                <button onclick = "myFunction()""#" class="btn btn-danger">PUSH BUTTON</button>
+                <button onclick = "clickText('IS NOT THE WINNER BUTTON')""#" class="btn btn-danger">PUSH BUTTON</button>
               </div>
             </div>
           </div>
@@ -64,8 +63,8 @@
 </div>
 <body>
 <script>
-  function myFunction() {
-    document.getElementById("demo").innerHTML ="WINNER BUTTON";
-  }
+function clickText(message) { 
+  document.getElementById("btn").innerHTML = message;
+}
 </script>
 </body>  
